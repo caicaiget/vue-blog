@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    import MarkDown from '../../../markdown/index'
+    import MarkDown from '../../../../markdown/index'
 
     export default {
         name: "index",

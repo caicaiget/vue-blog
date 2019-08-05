@@ -52,7 +52,7 @@
             };
             this.$axios.post('/api/auth', data).then(
               function () {
-                this.$router.push('/article')
+                this.$router.push('/back')
               }.bind(this)
             ).catch(function (error) {
               console.log(error)

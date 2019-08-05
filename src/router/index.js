@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '../components/page/login'
-import Article from '../components/page/article/index'
+import Article from '../components/page/back/article/index'
 import Event from "../components/commom/event"
-import MarkDown from '../components/page/article/post/index'
+import MarkDown from '../components/page/back/article/post/index'
 import BackBlog from '../components/layout/backBlog'
 import Blog from '../components/layout/blog'
 Vue.use(Router);
@@ -17,6 +17,10 @@ export default new Router({
           {
             path: '/mark',
             component: MarkDown
+          },
+          {
+            path: '/article',
+            component: Article
           },
         ]
       },

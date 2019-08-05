@@ -12,11 +12,11 @@
           </template>
         </el-menu-item>
         <el-submenu index="1">
-          <template slot="title"><i class="el-icon-message"></i>导航一</template>
+          <template slot="title"><i class="el-icon-message"></i>管理</template>
           <el-menu-item-group>
-            <template slot="title">分组一</template>
-            <el-menu-item index="1-1">选项1</el-menu-item>
-            <el-menu-item index="1-2">选项2</el-menu-item>
+            <el-menu-item index="1-1"><router-link to="/article" style="text-decoration: none;">文章管理</router-link></el-menu-item>
+            <el-menu-item index="1-2">标签管理</el-menu-item>
+            <el-menu-item index="1-2">评论管理</el-menu-item>
           </el-menu-item-group>
         </el-submenu>
       </el-menu>
@@ -27,9 +27,8 @@
         <el-dropdown>
           <i class="el-icon-setting" style="margin-right: 15px"></i>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item>查看</el-dropdown-item>
-            <el-dropdown-item>新增</el-dropdown-item>
-            <el-dropdown-item>删除</el-dropdown-item>
+            <el-dropdown-item><router-link to="/login" style="text-decoration: none;">登录</router-link></el-dropdown-item>
+            <el-dropdown-item>登出</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
       </el-header>
